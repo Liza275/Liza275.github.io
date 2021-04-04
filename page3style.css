@@ -1,0 +1,223 @@
+.form-p3 {
+    position: relative;
+    margin-top: 90px;
+    width: 100%;
+    height: 600px;
+}
+
+.form-p3-header {
+    position: relative;
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    left: 60px;
+    top: 0;
+}
+
+.form-p3-fio-input {
+    font-size: 16px;
+    color: #8A8A8F;
+    padding: 9px 16px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: none;
+    width: 540px;
+    height: 48px;
+    display: block;
+    margin-left: 220px;
+    margin-top: 63px;
+}
+
+.form-p3-fio {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 60px;
+    top: 96px;
+}
+
+.form-p3-phone {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 60px;
+    top: 44px;
+}
+
+.form-p3-phone-input {
+    font-size: 16px;
+    color: #8A8A8F;
+    padding: 9px 16px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: none;
+    width: 540px;
+    height: 48px;
+    display: block;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.checkbox-header {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 60px;
+    top: 18px;
+}
+
+/*radio buttons*/
+
+.label-poll-first {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-left: 400px;
+    top: 0;
+}
+
+.label-poll-center {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-left: -28px;
+    top: 40px;
+}
+
+.label-poll-last {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-left: -28px;
+    top: 82px;
+}
+
+.buttons-poll {
+    display: none;
+}
+
+.fake-poll {
+    display: inline-block;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.fake-poll::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C8C7CC;
+    transition: .2s;
+}
+
+.buttons-poll:checked + .fake-poll::before {
+    border-color: #C6AA9D;
+    border-width: 6px;
+}
+
+.lux {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 444px;
+    top: -28px;
+}
+
+.pol-lux {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 444px;
+    top: -6px;
+}
+
+.standard {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 444px;
+    top: 18px;
+}
+
+.dop-place-p3 {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 60px;
+    top: 102px;
+}
+
+.checkbox-dop-place-p3 {
+    position: relative;
+    border: 1px solid #C8C7CC;
+    width: 18px;
+    height: 18px;
+    left: 398px;
+    top: 82px;
+}
+
+.yes-dop-place {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 444px;
+    top: 58px;
+}
+
+.callback-p3 {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 60px;
+    top: 92px;
+}
+
+.checkbox-callback-p3 {
+    position: relative;
+    border: 1px solid #C8C7CC;
+    width: 18px;
+    height: 18px;
+    left: 398px;
+    top: 70px;
+}
+
+.yes-callback-p3 {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    left: 444px;
+    top: 48px;
+}
+
+.bron {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    border-radius: 4px;
+    background: #C6AA9D;
+    width: 126px;
+    height: 48px;
+    text-align: center;
+}
+
+.bron-text {
+    color: black;
+    font-size: 16px;
+    transform: translateY(-15%);
+}

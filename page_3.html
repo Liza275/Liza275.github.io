@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<head>
+    <title>Отель "Уют"</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="settings_navContent.css">
+    <link rel="stylesheet" href="bigImage.css">
+    <link rel="stylesheet" href="mainContent.css">
+    <link rel="stylesheet" href="page3style.css">
+    <link rel="icon" href="" type="">
+    <!-- Кодировка страницы -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+<div class="nav-content">
+    <div class="nav-items">
+        <a href="page_1.html" class="nav-button first-button">
+            <div class="button-text">Главная</div>
+        </a>
+        <a href="page_2.html" class="nav-button">
+            <div class="button-text">Номера</div>
+        </a>
+        <a href="" class="nav-button">
+            <div class="button-text">Об отеле</div>
+        </a>
+        <a href="page_3.html" class="nav-button">
+            <div class="button-text">Бронирование</div>
+        </a>
+    </div>
+</div>
+<form class="main-content">
+    <div class="main-content-header">
+        Бронирование номера
+    </div>
+    <div class="form-p3">
+        <div class="form-p3-header">
+            Чтобы забронировать номер, заполните все окошки
+        </div>
+        <div class="form-p3-fio">ФИО</div>
+        <input id="fio" type="text" class="form-p3-fio-input" id="name" placeholder="ФИО" required=""/>
+        <div class="form-p3-phone">Номер телефона</div>
+        <input id="phone" type="text" class="form-p3-phone-input" id="phone" placeholder="Номер телефона" required=""/>
+        <div class="checkbox-header">Выберите номер для бронирования</div>
+        <label class="label-poll-first">
+            <input id="r2-poll-f" type="radio" class="buttons-poll" name="r" value="2-p">
+            <span class="fake-poll"></span>
+            <span class="fake-poll-selected"></span>
+        </label>
+        <label class="label-poll-center">
+            <input id="r2-poll-c" type="radio" class="buttons-poll" name="r" value="2-p">
+            <span class="fake-poll"></span>
+            <span class="fake-poll-selected"></span>
+        </label>
+        <label class="label-poll-last">
+            <input id="r2-poll-l" type="radio" class="buttons-poll" name="r" value="2-p">
+            <span class="fake-poll"></span>
+            <span class="fake-poll-selected"></span>
+        </label>
+        <div class="lux">Люкс</div>
+        <div class="pol-lux">Полулюкс</div>
+        <div class="standard">Стандарт</div>
+        <div class="dop-place-p3">
+            Нужно будет дополнительное место
+        </div>
+        <input id="dop_place_checkbox" type="checkbox" class="checkbox-dop-place-p3">
+        <div class="yes-dop-place">Да</div>
+
+        <div class="callback-p3">
+            Позвонить мне для уточнения информации
+        </div>
+        <input id="callbackcheckbox" type="checkbox" class="checkbox-callback-p3">
+        <div class="yes-callback-p3">Да</div>
+        <button type="submit"  class="bron"><p class="bron-text">Забронировать</p></button>
+    </div>
+</form>
+<div class="logo">
+    <img src="./img/logoza.ru-removebg-preview.png" alt="" class="logo-img">
+</div>
+</body>
+</html>
