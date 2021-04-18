@@ -2,15 +2,31 @@
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
 <head>
-    <title>Отель "Уют"</title>
+    <title>Отель "Уют"</title><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(76087228, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/76087228" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <!-- Подключаем CSS -->
     <link rel="stylesheet" href="settings_navContent.css">
     <link rel="stylesheet" href="bigImage.css">
     <link rel="stylesheet" href="mainContent.css">
     <link rel="stylesheet" href="page3style.css">
     <link rel="icon" href="" type="">
+
     <!-- Кодировка страницы -->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </head>
 <body>
 <div class="nav-content">
@@ -29,7 +45,7 @@
         </a>
     </div>
 </div>
-<form class="main-content">
+<form class="main-content" id="form">
     <div class="main-content-header">
         Бронирование номера
     </div>
@@ -38,12 +54,12 @@
             Чтобы забронировать номер, заполните все окошки
         </div>
         <div class="form-p3-fio">ФИО</div>
-        <input id="fio" type="text" class="form-p3-fio-input" id="name" placeholder="ФИО" required=""/>
+        <input id="fio" type="text" class="form-p3-fio-input" id="name"  name="fio" />
         <div class="form-p3-phone">Номер телефона</div>
-        <input id="phone" type="text" class="form-p3-phone-input" id="phone" placeholder="Номер телефона" required=""/>
+        <input id="phone" type="text" class="form-p3-phone-input" id="phone" name="number" />
         <div class="checkbox-header">Выберите номер для бронирования</div>
         <label class="label-poll-first">
-            <input id="r2-poll-f" type="radio" class="buttons-poll" name="r" value="2-p">
+            <input id="r2-poll-f" type="radio" class="buttons-poll" name="r" value="2-p" checked>
             <span class="fake-poll"></span>
             <span class="fake-poll-selected"></span>
         </label>
@@ -74,6 +90,7 @@
         <button type="submit"  class="bron"><p class="bron-text">Забронировать</p></button>
     </div>
 </form>
+<script src="js/site.js"></script>
 <div class="logo">
     <img src="./img/logoza.ru-removebg-preview.png" alt="" class="logo-img">
 </div>
